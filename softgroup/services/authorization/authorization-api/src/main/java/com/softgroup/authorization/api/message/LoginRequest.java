@@ -8,6 +8,8 @@ import com.softgroup.common.protocol.RequestData;
  */
 public class LoginRequest implements RequestData{
 
+
+	
 	private static final long serialVersionUID = 4895237867750981751L;
 
 	private String deviceToken;
