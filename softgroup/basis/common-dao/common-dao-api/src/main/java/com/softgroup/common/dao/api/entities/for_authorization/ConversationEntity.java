@@ -4,16 +4,15 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.io.Serializable;
 
-/**
- * Created by User on 21.03.2017.
- */
 
 
 @Entity
 @Table(name = "conversation")
-public class ConversationEntity implements Serializable {
+public class ConversationEntity {
+
+
+    // FIXME: 06.04.2017 to understand what type of the field  is_exist?
 
     @Id
     @Column(name = "id")
@@ -22,14 +21,27 @@ public class ConversationEntity implements Serializable {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "admin_id")
+    private String adminId;
+
     @Column(name = "logo_image_uri")
     private String logoImageUri;
+
 
     @Column(name = "type")
     private Integer type;
 
-    @Column(name = "last_message_index")
-    private long lastMessageIndex;
+    @Column(name = "create_date")
+   private long createDate;         // FIXME: 06.04.2017 DEFINE certain type of this field
+
+
+    public String getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(String adminId) {
+        this.adminId = adminId;
+    }
 
     public String getId() {
         return id;
@@ -63,11 +75,6 @@ public class ConversationEntity implements Serializable {
         this.type = type;
     }
 
-    public long getLastMessageIndex() {
-        return lastMessageIndex;
-    }
 
-    public void setLastMessageIndex(long lastMessageIndex) {
-        this.lastMessageIndex = lastMessageIndex;
-    }
+
 }
