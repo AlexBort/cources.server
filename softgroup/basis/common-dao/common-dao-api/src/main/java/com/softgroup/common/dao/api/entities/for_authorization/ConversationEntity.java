@@ -12,8 +12,6 @@ import javax.persistence.Table;
 public class ConversationEntity {
 
 
-    // FIXME: 06.04.2017 to understand what type of the field  is_exist?
-
     @Id
     @Column(name = "id")
     private String id;
@@ -32,7 +30,7 @@ public class ConversationEntity {
     private Integer type;
 
     @Column(name = "create_date")
-   private long createDate;         // FIXME: 06.04.2017 DEFINE certain type of this field
+   private long createDate;
 
 
     public String getAdminId() {
