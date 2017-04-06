@@ -1,5 +1,7 @@
 package com.softgroup.authorithation.impl.handler;
 
+import com.openpojo.log.Logger;
+import com.openpojo.log.LoggerFactory;
 import com.softgroup.authorization.api.message.RegisterRequest;
 import com.softgroup.authorization.api.message.RegisterResponse;
 import com.softgroup.authorization.api.router.AuthorizationRequestHandler;
@@ -13,6 +15,8 @@ import com.softgroup.common.router.api.AbstractRequestHandler;
 public class RegisterHandler extends AbstractRequestHandler<RegisterRequest,RegisterResponse>
         implements AuthorizationRequestHandler {
 
+    static Logger log = LoggerFactory.getLogger(RegisterHandler.class);
+
     @Override
     public String getName() {
         return "register";
@@ -24,7 +28,7 @@ public class RegisterHandler extends AbstractRequestHandler<RegisterRequest,Regi
         Response<RegisterResponse> response = new Response<RegisterResponse>();
         response.setHeader(messageRequest.getHeader());
         response.setData(new RegisterResponse());
-        System.out.println("RegisterResponseHandle");
+        log.info("RegisterResponse");
         return response;
 
     }
