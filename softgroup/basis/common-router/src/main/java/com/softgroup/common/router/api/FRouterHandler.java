@@ -7,14 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class FRouterHandler implements Handler {
+public class FRouterHandler implements Handler {
 
 
     @Override
     public String getName() {
         return "mainRouter";
     }
-
 
     @Autowired
     HandlerFactory<AbstractRouterHandler> routerHandlerHandlerFactory;
