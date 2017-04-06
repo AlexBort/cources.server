@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * Created by User on 21.03.2017.
  */
 @Component
-public class RouterHandlerFactory<T extends AbstractRouterHandler> extends Factory<T> {
+public class RouterHandlerFactory<T extends AbstractRouterHandler> extends HandlerFactory<T> {
 
 
     @Override

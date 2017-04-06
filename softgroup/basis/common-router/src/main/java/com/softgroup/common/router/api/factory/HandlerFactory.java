@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by User on 21.03.2017.
  */
-public abstract class Factory<T extends Handler> {
+public abstract class HandlerFactory<T extends Handler> {
 
 
     @Autowired

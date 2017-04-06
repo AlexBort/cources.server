@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class RequestHandlerFactory<T extends AbstractRequestHandler> extends Factory<T> {
+public class RequestHandlerFactory<T extends AbstractRequestHandler> extends HandlerFactory<T> {
 
 
     protected String getRouteKey(Request<?> msg) {

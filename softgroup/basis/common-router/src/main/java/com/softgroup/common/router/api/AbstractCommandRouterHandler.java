@@ -10,7 +10,6 @@ public abstract class AbstractCommandRouterHandler<T extends Handler> extends Ab
 
     public abstract String getName();
 
-
     @Override
     public String getRouteKey(Request request) {
         return request.getHeader().getCommand();
