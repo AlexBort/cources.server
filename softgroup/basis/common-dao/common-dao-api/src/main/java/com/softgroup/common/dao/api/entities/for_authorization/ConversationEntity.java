@@ -1,4 +1,4 @@
-package com.softgroup.common.dao.api.entities;
+package com.softgroup.common.dao.api.entities.for_authorization;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,15 +12,12 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "conversation_settings")
-public class ConversationSettingsEntity implements Serializable {
+@Table(name = "conversation")
+public class ConversationEntity implements Serializable {
 
     @Id
     @Column(name = "id")
     private String id;
-
-    @Column(name = "admin_id")
-    private String adminId;
 
     @Column(name = "name")
     private String name;
@@ -28,6 +25,11 @@ public class ConversationSettingsEntity implements Serializable {
     @Column(name = "logo_image_uri")
     private String logoImageUri;
 
+    @Column(name = "type")
+    private Integer type;
+
+    @Column(name = "last_message_index")
+    private long lastMessageIndex;
 
     public String getId() {
         return id;
@@ -35,14 +37,6 @@ public class ConversationSettingsEntity implements Serializable {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getAdminId() {
-        return adminId;
-    }
-
-    public void setAdminId(String adminId) {
-        this.adminId = adminId;
     }
 
     public String getName() {
@@ -61,4 +55,19 @@ public class ConversationSettingsEntity implements Serializable {
         this.logoImageUri = logoImageUri;
     }
 
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public long getLastMessageIndex() {
+        return lastMessageIndex;
+    }
+
+    public void setLastMessageIndex(long lastMessageIndex) {
+        this.lastMessageIndex = lastMessageIndex;
+    }
 }
