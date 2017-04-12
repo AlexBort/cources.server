@@ -1,6 +1,7 @@
 package com.softgroup.common.dao.impl.repositories;
 
-import com.softgroup.common.dao.api.entities.for_authorization.ProfileSettingsEntity;
+
+import com.softgroup.common.dao.api.entity.ProfileSettingsEntity;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**

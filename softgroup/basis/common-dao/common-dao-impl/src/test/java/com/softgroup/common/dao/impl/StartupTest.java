@@ -1,7 +1,8 @@
 package com.softgroup.common.dao.impl;
 
-import com.softgroup.common.dao.api.entities.for_authorization.ProfileEntity;
-import com.softgroup.common.dao.api.entities.for_authorization.ProfileSettingsEntity;
+
+import com.softgroup.common.dao.api.entity.ProfileEntity;
+import com.softgroup.common.dao.api.entity.ProfileSettingsEntity;
 import com.softgroup.common.dao.impl.configuration.CommonDaoAppCfg;
 import com.softgroup.common.dao.impl.repositories.ProfileRepository;
 import com.softgroup.common.dao.impl.repositories.ProfileSettingsRepository;
