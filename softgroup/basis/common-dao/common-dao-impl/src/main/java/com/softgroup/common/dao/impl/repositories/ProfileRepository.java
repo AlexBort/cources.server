@@ -17,6 +17,7 @@ public interface ProfileRepository extends PagingAndSortingRepository<, String> 
     List<ProfileEntity> findByNameAndPhoneNumber(String s, String number);
 
 
+    
     // FIXME: 12.04.2017 for what goal, I need this method?
     @Query("select p from ProfileEntity p where p.name = :name")
     List<ProfileEntity> findByNameQuery(@Param("name") String s);
