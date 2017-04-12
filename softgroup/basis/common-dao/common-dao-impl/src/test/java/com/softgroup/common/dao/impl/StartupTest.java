@@ -19,7 +19,7 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {CommonDaoAppCfg.class})
-public class Test_ {
+public class StartupTest {
 
     @Autowired
     private ProfileRepository profileRepository;
