@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FRouterHandler implements Handler {
+public class FrouterHandler implements Handler {
 
 
     @Override
