@@ -1,4 +1,4 @@
-package com.softgroup.common.dao.api.entities.for_authorization;
+package com.softgroup.common.dao.api.entity;
 
 
 import javax.persistence.Column;
