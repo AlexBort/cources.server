@@ -10,6 +10,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.softgroup"})
+        "com.softgroup.frontend.test"})
 public class RestApplicationConfiguration  {
 }
