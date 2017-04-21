@@ -33,6 +33,12 @@
 
 			<dependency>
 				<groupId>com.softgroup</groupId>
+				<artifactId>common-jwt</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.softgroup</groupId>
 				<artifactId>common-datamapper</artifactId>
 				<version>${project.version}</version>
 			</dependency>
