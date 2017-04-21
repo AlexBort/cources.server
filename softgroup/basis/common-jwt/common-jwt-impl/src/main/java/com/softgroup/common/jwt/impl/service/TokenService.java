@@ -16,7 +16,7 @@ import java.util.Date;
 @Component
 public class TokenService implements UniversalTokenService {
 
-    
+
     private final String KEY = "g94wri5j3j653jih3og";
     private final TokenType SESSION_TOKEN = TokenType.SESSION_TOKEN;
     private final TokenType DEVICE_TOKEN = TokenType.DEVICE_TOKEN;
