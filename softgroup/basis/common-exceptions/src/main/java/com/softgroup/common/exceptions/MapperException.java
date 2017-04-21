@@ -14,4 +14,6 @@ public class MapperException extends SoftgroupException {//NOSONAR: this is exce
     public MapperException(String message) {
         super(message);
     }
+
+
 }
