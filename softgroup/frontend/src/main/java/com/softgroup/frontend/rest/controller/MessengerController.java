@@ -1,13 +1,10 @@
-package com.softgroup.frontend.test.controller;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
+package com.softgroup.frontend.rest.controller;
+import com.softgroup.common.datamapper.DataMapper;
+import com.softgroup.common.protocol.Response;
+import com.softgroup.common.router.api.Handler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-
 
 
 /**
@@ -16,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping(path = "/test")
+@RequestMapping(path = "/rest")
 public class MessengerController {
 
 
     @RequestMapping(path = "/message",
             method = RequestMethod.GET)
     public String publicMessage() {
-        return "test" ;
+        return "rest" ;
     }
 
 

@@ -28,4 +28,5 @@ public interface DataMapper {
 
 	String objectToString(Object data);
 
+
 }

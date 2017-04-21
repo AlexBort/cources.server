@@ -1,18 +1,16 @@
-package com.softgroup.frontend.test.configuration;
+package com.softgroup.frontend.rest.controller.resources.configuration;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-/**
- * Created by User on 23.03.2017.
- */
-
-
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {
-        "com.softgroup.frontend"})
+@ComponentScan(basePackages = {"com.softgroup.controller"},
+               excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)
+)
 public class WebConfiguration extends WebMvcConfigurerAdapter {
+
 }

@@ -114,7 +114,7 @@
 			<version>1.10</version>
 		</dependency>
 
-		<!-- test -->
+		<resttest -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
