@@ -1,4 +1,4 @@
-package com.softgroup.frontend.test.controller.resources.configuration;
+package com.softgroup.frontend.rest.controller.resources.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

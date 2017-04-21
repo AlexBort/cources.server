@@ -21,7 +21,7 @@ public class TestController {
 
     @RequestMapping(path = "/message")
     public String publicMessage(@RequestBody final String request) {
-        return "test " + request;
+        return "rest " + request;
     }
 
 }
