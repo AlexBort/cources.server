@@ -16,7 +16,12 @@
 			<groupId>com.softgroup</groupId>
 			<artifactId>authorization-api</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>com.openpojo</groupId>
+            <artifactId>openpojo</artifactId>
+            <version>0.8.4</version>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
 </project>

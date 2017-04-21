@@ -1,5 +1,7 @@
 package com.softgroup.authorithation.impl.handler;
 
+import com.openpojo.log.Logger;
+import com.openpojo.log.LoggerFactory;
 import com.softgroup.authorization.api.message.SmsConfirmRequest;
 import com.softgroup.authorization.api.message.SmsConfirmResponse;
 import com.softgroup.authorization.api.router.AuthorizationRequestHandler;
@@ -13,6 +15,8 @@ import com.softgroup.common.router.api.AbstractRequestHandler;
 public class SmsConfirmHandler extends AbstractRequestHandler<SmsConfirmRequest, SmsConfirmResponse>
         implements AuthorizationRequestHandler {
 
+    static Logger log = LoggerFactory.getLogger(SmsConfirmHandler.class);
+
     @Override
     public String getName() {
         return "smsConfirm";
@@ -23,7 +27,7 @@ public class SmsConfirmHandler extends AbstractRequestHandler<SmsConfirmRequest,
         Response<SmsConfirmResponse> smsConfirmResponse = new Response<SmsConfirmResponse>();
         smsConfirmResponse.setHeader(messageRequest.getHeader());
         smsConfirmResponse.setData(new SmsConfirmResponse());
-        System.out.println("SmsConfirmResponseHandle");
+        log.info("SmsConfirmResponse");
         return smsConfirmResponse;
     }
 }
