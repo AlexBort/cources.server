@@ -13,26 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-/*@RequestMapping(path = "/messenger")*/
-@RequestMapping(path = "/test"/*,
-        method = RequestMethod.POST,
-        consumes = MediaType.TEXT_PLAIN_VALUE,
-        produces = MediaType.TEXT_PLAIN_VALUE*/)
+@RequestMapping(path = "/rest")
 public class MessengerController {
 
-/*
-    @Autowired
-    Handler firstRouterHandler;
-
-    @Autowired
-    DataMapper jacksonDataMapper;*/
-
-   /* @RequestMapping(path = "/registration",
-            method = RequestMethod.POST)
-    public Response publicMessage(@RequestBody final String requestStr) {
-        CommonRequest request = jacksonDataMapper.mapData(requestStr.getBytes(StandardCharsets.UTF_8),CommonRequest.class);
-        return firstRouterHandler.handle(request);
-    }*/
 
     @RequestMapping(path = "/message",
             method = RequestMethod.GET)
